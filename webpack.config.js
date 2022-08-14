@@ -5,10 +5,10 @@ const prodConfig = require('./build/webpack.prod')
 const { isDev } = require('./build/constants')
 
 const resolveConfig = function () {
-  if (isDev) {
-    return merge(commonConfig, devConfig)
-  }
-  return merge(commonConfig, prodConfig)
+    if (isDev) {
+        return merge(commonConfig, devConfig)
+    }
+    return merge(commonConfig, prodConfig)
 }
 
 module.exports = resolveConfig()
